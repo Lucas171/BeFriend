@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.onlyOnMobile {
+  visibility: hidden;
+}
+
+#navHamburger {
+  display: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+
+
+div.pinkContainer {
+  background-color: #FF838C;
+  width: 40%;
+  height: 100vh;
+  box-sizing: border-box;
+  float: left;
+
+
+}
+
+div.logo {
+  background-color: #313131;
+  color: white;
+  text-align: center;
+  width: 70px;
+  height: auto;
+  margin: 20px 0 0 20px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+div.mainText {
+  text-align: center;
+  margin-top: 40%;
+
+}
+
+div.mainText h1 {
+  font-size: 5em;
+  z-index: 2;
+  position: relative;
+}
+
+p.threeWords {
+  font-size: 2em;
+  color: #333;
+}
+
+div.downloadButtons {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.appleDownload {
+  float: left;
+
+}
+
+.androidDownload {
+  float: right;
+
+}
+
+.appleDownload,
+.androidDownload {
+  width: 45%;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.appleDownload p,
+.androidDownload p {
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+
+.appleDownload svg,
+.androidDownload img {
+  width: 20%;
+  float: left;
+  padding: 5px;
+}
+
+.androidDownload img {
+  padding-top: 10px;
+  padding-bottom: 19px;
+}
+
+
+
+
+
+
+.greyContainer {
+  background-color: #CBCBCB;
+  width: 60%;
+  box-sizing: border-box;
+  float: left;
+  height: 100vh;
+}
+
+nav.laptopNav ul {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+nav.laptopNav ul li {
+  display: inline;
+  font-size: 30px;
+  margin: 20px;
+
+}
+
+nav.laptopNav ul li:nth-last-child(1) {
+  padding: 10px 20px;
+
+}
+
+
+
+nav.laptopNav ul li.loginButton {
+  border: 2px solid #FF838C;
+  border-radius: 10px;
+}
+
+nav.laptopNav ul li.loginButton:hover {
+  background-color: #FF838C;
+  color: white;
+}
+
+
+
+
+.image1,
+.image2,
+.image3,
+.image1b,
+.image2b,
+.image3b {
+  position: absolute;
+}
+
+.image1 {
+  width: 30%;
+  top: 11%;
+  left: 37%;
+  animation-name: cf3OutFadeIn;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
+
+.image1b {
+  width: 30%;
+  top: 10%;
+  left: 35%;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
+
+.image2 {
+  width: 30%;
+  top: 20%;
+  left: 69%;
+  animation-name: cf3OutFadeIn;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+}
+
+.image2b {
+  width: 30%;
+  top: 10%;
+  left: 69%;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+}
+
+.image3 {
+  width: 30%;
+  top: 57%;
+  left: 49%;
+  animation-name: cf3OutFadeIn;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+.image3b {
+  width: 30%;
+  top: 57%;
+  left: 49%;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+
+  /* 45% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 0;
+  } */
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cf3OutFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  /* 45% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 0;
+  } */
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.list {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+
+  img {
+    visibility: hidden;
+  }
+
+  /* .image3 {
+    visibility: visible;
+    top: 60%;
+    left: 10rem;
+    width: 300px;
+    animation: initial;
+  } */
+
+
+
+  div.pinkContainer,
+  .androidDownload img,
+  div.logo,
+  div.logo h1,
+  div.mainText,
+  div.mainText h1,
+  p.threeWords,
+  div.downloadButtons,
+  .appleDownload,
+  .androidDownload,
+  .appleDownload p,
+  .androidDownload p,
+  .appleDownload svg,
+  .androidDownload img {
+    visibility: visible;
+  }
+
+  div.mainText {
+    margin-top: 300px;
+  }
+
+  div.pinkContainer {
+    width: 100%;
+    height: 100vh;
+  }
+
+  svg#navHamburger {
+    width: 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .onlyOnMobile {
+    visibility: visible;
+    background-color: grey;
+    height: 300px;
+
+  }
+
+
+  .list2 {
+    display: inherit;
+  }
+
+  .onlyOnMobile ul li {
+    list-style-type: none;
+    font-size: 30px;
+    text-align: right;
+    padding-top: 50px;
+    margin-right: 40px;
+    color: white;
+  }
+
+  #navHamburger {
+    display: initial;
+  }
+
+
+
+
+}
