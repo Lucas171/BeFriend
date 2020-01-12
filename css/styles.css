@@ -264,17 +264,24 @@ nav.laptopNav ul li.loginButton:hover {
 
 @media (max-width: 1000px) {
 
+  .image1,
+  .image2,
+  .image3,
+  .image1b,
+  .image2b,
+  .image3b,
+  nav.laptopNav ul li.loginButton,
+  nav.laptopNav ul li:nth-last-child(1),
+  nav.laptopNav ul li,
+  nav.laptopNav ul,
+  .greyContainer {
+    visibility: hidden;
+  }
+
   img {
     visibility: hidden;
   }
 
-  /* .image3 {
-    visibility: visible;
-    top: 60%;
-    left: 10rem;
-    width: 300px;
-    animation: initial;
-  } */
 
 
 
